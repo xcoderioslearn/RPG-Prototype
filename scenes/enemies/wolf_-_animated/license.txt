@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wolf - Animated
+* source:	https://sketchfab.com/3d-models/wolf-animated-8e290c611b274721aa007e6cdb6b35a8
+* author:	ToonMesh 3D (https://sketchfab.com/ToonMesh3D)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wolf - Animated" (https://sketchfab.com/3d-models/wolf-animated-8e290c611b274721aa007e6cdb6b35a8) by ToonMesh 3D (https://sketchfab.com/ToonMesh3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

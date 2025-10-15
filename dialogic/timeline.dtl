@@ -1,0 +1,17 @@
+join BarbarianNPC center
+BarbarianNPC: Hello, and welcome to Elwynn Forest!
+BarbarianNPC: My name is Mighty Hunter.
+
+BarbarianNPC: I have a task for you — if you're brave enough.
+
+BarbarianNPC: Bring me 5 bear heads from the beasts that roam behind the castle, out on the field.
+
+BarbarianNPC: Do this, and the gold shall be yours!
+
+BarbarianNPC: > Choice
+- Yes
+    set {accept} = true
+    BarbarianNPC: Excellent! I knew you were brave enough.
+- No
+    set {refuse} = true
+    BarbarianNPC: Hmm. Perhaps another time then.

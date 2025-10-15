@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfh3bxwad744n"]
+
+[ext_resource type="PackedScene" uid="uid://cegeee06hqool" path="res://assets/models/Floor.gltf" id="1_6nwrk"]
+[ext_resource type="PackedScene" uid="uid://d21uc0ap0j375" path="res://assets/models/Floor_Dirt.gltf" id="2_h3n32"]
+[ext_resource type="PackedScene" uid="uid://bvt3lw7hxktka" path="res://assets/models/floor_green.glb" id="3_0xrge"]
+
+[node name="Floor" type="Node3D"]
+
+[node name="FloorGrey" parent="." instance=ExtResource("1_6nwrk")]
+
+[node name="DirtFloor" parent="." instance=ExtResource("2_h3n32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.22069, 0, 0)
+
+[node name="floor_green" parent="." instance=ExtResource("3_0xrge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.29061, 0, 0)
+
+[editable path="DirtFloor"]
