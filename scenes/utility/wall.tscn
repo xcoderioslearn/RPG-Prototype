@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdaa8l6sgdakf"]
+
+[ext_resource type="PackedScene" uid="uid://cs5o75jm1bb6k" path="res://addons/kaykit_dungeon_remastered/Assets/gltf/wall.gltf.glb" id="1_rnnsk"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="wall_gltf" parent="." instance=ExtResource("1_rnnsk")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)

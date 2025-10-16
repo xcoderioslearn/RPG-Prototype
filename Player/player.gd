@@ -18,6 +18,7 @@ var _attack_direction := Vector3.ZERO
 @onready var vertical_pivot: Node3D = $HorizontalPivot/VerticalPivot
 @onready var rig_pivot: Node3D = $RigPivot
 @onready var rig: Node3D = $RigPivot/Rig
+@onready var label: Label = $Label
 
 
 
@@ -30,6 +31,7 @@ func _physics_process(delta: float) -> void:
 	handle_movement(delta)
 	handle_physics_frame_slashing(delta)
 	move_and_slide()
+	label.text = str(Engine.get_frames_per_second())
 
 
 func _unhandled_input(event: InputEvent) -> void:
