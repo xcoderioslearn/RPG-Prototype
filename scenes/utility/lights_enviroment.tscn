@@ -23,4 +23,4 @@ environment = SubResource("Environment_a6ohm")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
-light_color = Color(0.8144, 0.840964, 0.0336234, 1)
+light_color = Color(0.7669341, 0.7561522, 3.85046e-07, 1)
