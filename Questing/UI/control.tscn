@@ -1,0 +1,303 @@
+[gd_scene load_steps=12 format=3 uid="uid://ubq2qbpayc3r"]
+
+[ext_resource type="Script" uid="uid://bwwc0ke1ot71l" path="res://Questing/UI/control.gd" id="1_nh5hm"]
+[ext_resource type="Texture2D" uid="uid://hneruaqvnmqd" path="res://Questing/UI/gradientbuttons.tres" id="2_filc1"]
+[ext_resource type="Texture2D" uid="uid://dhwa3dbq47vjo" path="res://Questing/UI/gradient.tres" id="2_nh5hm"]
+[ext_resource type="FontFile" uid="uid://bfyeiyndbdq0u" path="res://Questing/MedievalSharp/MedievalSharp-Regular.ttf" id="4_er0wr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rtouq"]
+texture = ExtResource("2_nh5hm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_filc1"]
+texture = ExtResource("2_nh5hm")
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_nh5hm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nh5hm"]
+texture = ExtResource("2_nh5hm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_er0wr"]
+texture = ExtResource("2_nh5hm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c20no"]
+texture = ExtResource("2_nh5hm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1xo2p"]
+texture = ExtResource("2_nh5hm")
+
+[node name="QuestUI" type="Control"]
+layout_mode = 3
+anchor_right = 0.390625
+anchor_bottom = 0.8712963
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nh5hm")
+
+[node name="MainFrame" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_rtouq")
+
+[node name="YesFrame" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = -83.0
+offset_right = 273.0
+offset_bottom = -14.0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_filc1")
+
+[node name="YesButton" type="TextureButton" parent="YesFrame"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_nh5hm")
+texture_normal = ExtResource("2_nh5hm")
+texture_pressed = ExtResource("2_filc1")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="YesFrame/YesButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 24
+text = "YES	"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OK" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -129.86
+offset_top = -82.72998
+offset_right = 128.14001
+offset_bottom = -13.72998
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_filc1")
+
+[node name="Ok" type="TextureButton" parent="OK"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_nh5hm")
+texture_normal = ExtResource("2_nh5hm")
+texture_pressed = ExtResource("2_filc1")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="OK/Ok"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_er0wr")
+text = "Ok"
+
+[node name="NoFrame" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -273.0
+offset_top = -83.0
+offset_right = -14.999939
+offset_bottom = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_nh5hm")
+
+[node name="NoButton" type="TextureButton" parent="NoFrame"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+texture_normal = ExtResource("2_filc1")
+texture_pressed = ExtResource("2_nh5hm")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="NoFrame/NoButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 24
+text = "No"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BodyFrame" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -362.0
+offset_top = -300.5
+offset_right = 364.0
+offset_bottom = 354.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_er0wr")
+
+[node name="DescriptionBackground" type="TextureRect" parent="BodyFrame"]
+custom_minimum_size = Vector2(702.6, 637.75)
+layout_mode = 2
+texture = ExtResource("2_nh5hm")
+
+[node name="DescriptionVBox" type="VBoxContainer" parent="BodyFrame/DescriptionBackground"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 84.0
+offset_top = -269.5
+offset_right = 657.0
+offset_bottom = 269.5
+grow_vertical = 2
+
+[node name="Description" type="Label" parent="BodyFrame/DescriptionBackground/DescriptionVBox"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.011764706, 0.015686275, 0.015686275, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 20
+text = "Here comes Description
+"
+
+[node name="Objective" type="Label" parent="BodyFrame/DescriptionBackground/DescriptionVBox"]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_colors/font_color = Color(0.011764706, 0.015686275, 0.015686275, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 20
+text = " - Objectives
+"
+
+[node name="Reward" type="Label" parent="BodyFrame/DescriptionBackground/DescriptionVBox"]
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_colors/font_color = Color(0.011764706, 0.015686275, 0.015686275, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 20
+text = "-  Reward"
+
+[node name="TitleFrame" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -585.04
+offset_top = 9.0
+offset_right = -11.2699585
+offset_bottom = 162.1
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_c20no")
+
+[node name="QuestTitleBackground" type="TextureRect" parent="TitleFrame"]
+custom_minimum_size = Vector2(528.21, 116.12)
+layout_mode = 2
+texture = ExtResource("2_nh5hm")
+
+[node name="QuestTitleMiddle" type="Label" parent="TitleFrame/QuestTitleBackground"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -11.5
+offset_right = 66.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.011764706, 0.015686275, 0.015686275, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 25
+text = "I'm Title of Quest"
+
+[node name="IconFrame" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 164.31
+offset_bottom = 162.1
+theme_override_styles/panel = SubResource("StyleBoxTexture_1xo2p")
+
+[node name="IconBackground" type="TextureRect" parent="IconFrame"]
+layout_mode = 2
+texture = ExtResource("2_nh5hm")
+
+[node name="NPCName" type="Label" parent="IconFrame/IconBackground"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -17.5
+offset_right = 48.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.011764706, 0.015686275, 0.015686275, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_er0wr")
+theme_override_font_sizes/font_size = 25
+text = "I'm Icon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="YesFrame/YesButton" to="." method="_on_accept_pressed"]
+[connection signal="pressed" from="OK/Ok" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="NoFrame/NoButton" to="." method="_on_refuse_pressed"]

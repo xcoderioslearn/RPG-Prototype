@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://boxpnmlv7fq37"]
+[gd_scene load_steps=38 format=4 uid="uid://boxpnmlv7fq37"]
 
 [ext_resource type="PackedScene" uid="uid://d0necoo2ri8wt" path="res://scenes/utility/lights_enviroment.tscn" id="2_ne2rd"]
 [ext_resource type="PackedScene" uid="uid://bd2b504l5ibwr" path="res://Player/player.tscn" id="3_m0nun"]
@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://x8dowfitc3qi" path="res://scenes/enemies/wolf.tscn" id="30_yj63b"]
 [ext_resource type="Texture2D" uid="uid://3wmd4bs3dgh2" path="res://Terrain_Untitled.png" id="31_rd68x"]
 [ext_resource type="PackedScene" uid="uid://brpau7s4ia2dt" path="res://scenes/enemies/bear.tscn" id="31_yswqr"]
+[ext_resource type="PackedScene" uid="uid://ubq2qbpayc3r" path="res://Questing/UI/control.tscn" id="33_qcx5m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xbheo"]
 resource_name = "Material.001"
@@ -419,3 +420,5 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/Plane/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qcx5m")
+
+[node name="QuestUI" parent="." instance=ExtResource("33_qcx5m")]
